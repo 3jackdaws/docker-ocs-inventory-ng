@@ -64,14 +64,7 @@ Alias /ocsreports /usr/share/ocsinventory-reports/ocsreports
 #
 Alias /download /var/lib/ocsinventory-reports/download
 
-<Directory /var/lib/ocsinventory-reports/download>
-    # By default, users can use console from everywhere                                                                                                                              
-    Order deny,allow
-    Allow from all
-    Options Indexes FollowSymLinks
-    DirectoryIndex index.php
-    AllowOverride Options
-</Directory>
+
 ################################################################################
 # Snmp communities area
 #

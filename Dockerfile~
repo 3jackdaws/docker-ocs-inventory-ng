@@ -35,8 +35,7 @@ RUN chmod +w /usr/share/ocsinventory-reports/ocsreports/dbconfig.inc.php ;\
     chmod +x /tmp/init_db.sh; \
     /tmp/init_db.sh; \
     rm -fR /tmp/OCSNG_UNIX_SERVER-2.2.1
-
-RUN chmod 777 /var/lib/ocsinventory-reports/download
+    chmod 777 /var/lib/ocsinventory-reports/download
 EXPOSE 80 3306
 
 VOLUME ["/var/lib/mysql", "/var/log"]
